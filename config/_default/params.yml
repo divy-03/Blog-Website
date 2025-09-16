@@ -26,12 +26,12 @@ monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: D-Sketon
-email: xxx@example.com
-description: "少女祈祷中..."
-subtitle: "少女祈祷中..."
+author: Divy Pathak
+email: pathakdivy03@gmail.com
+description: "Web Developer"
+subtitle: "Web Developer"
 
-banner: "images/banner.webp"
+banner: "images/animeCoder.jpg"
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 
@@ -39,11 +39,11 @@ banner: "images/banner.webp"
 banner_srcset:
   enable: false
   srcset:
-    - src: "images/banner-600w.webp"
+    - src: "images/animeCoder.jpg"
       media: "(max-width: 479px)"
-    - src: "images/banner-800w.webp"
+    - src: "images/animeCoder.jpg"
       media: "(max-width: 799px)"
-    - src: "images/banner.webp"
+    - src: "images/animeCoder.jpg"
       media: "(min-width: 800px)"
 
 avatar: "avatar.webp"
@@ -51,7 +51,8 @@ avatar: "avatar.webp"
 # Control the display of the post cover
 # If not set, the banner image will be displayed by default
 # Its priority is lower than the cover in the Front-matter
-cover: # https://example.com / false / rgb(255,117,117)
+# cover: images/night.jpg / false / rgb(255,117,117)
+cover: "images/night.jpg"
 
 # Control the display of the post toc
 # Its priority is lower than the toc in the Front-matter
@@ -94,8 +95,8 @@ copyright:
 #   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
 
 footer:
-  since: 2020 # 2020-current year
-  powered: true
+  since: 2025 # 2020-current year
+  powered: false
   count: true
   busuanzi: true
   icon:
@@ -104,11 +105,11 @@ footer:
     mask: true # whether to use the images as a mask
 
 # Sidebar
-sidebar: right
+sidebar: left
 
 social:
-  # email: mailto:xxx@gmail.com
-  # github: https://github.com/yourname
+  email: mailto:pathakdivy03@gmail.com
+  github: https://github.com/divy-03
   # google: https://plus.google.com/yourname
   # twitter: https://twitter.com/yourname
   # facebook: https://www.facebook.com/yourname
@@ -184,9 +185,9 @@ anchor_icon: # default use '#' icon, you can use a hexadecimal representation of
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/cursor/reimu-cursor-default.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
-    pointer: ../images/cursor/reimu-cursor-pointer.png
-    text: ../images/cursor/reimu-cursor-text.png
+    default: ../images/cursor/arch.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    pointer: ../images/cursor/archpo.png
+    text: ../images/cursor/reimu-cursor-texxxt.png
 
 icon_font: 4552607_4k4bc36ef96
 
@@ -230,7 +231,7 @@ dark_mode:
   # true means that the dark mode is enabled by default
   # false means that the dark mode is disabled by default
   # auto means that the dark mode is automatically switched according to the system settings
-  enable: auto # true | false | auto
+  enable: true # true | false | auto
 
 ########################################
 # Analytics
@@ -643,18 +644,67 @@ material_theme:
   # so make sure your custom covers will not be blocked by the browser's CORS policy
   enable: false # enable material_theme to generate dynamic color schemes based on the banner image
 
+# internal_theme:
+#   light:
+#     --red-0: '#ff0000'
+#     --red-1: '#ff5252'
+#     --red-2: '#ff7c7c'
+#     --red-3: '#ffafaf'
+#     --red-4: '#ffd0d0'
+#     --red-5: '#ffecec'
+#     --red-5-5: '#fff3f3'
+#     --red-6: '#fff7f7'
+#     --color-red-6-shadow: 'rgba(255, 78, 78, 0.6)'
+#     --color-red-3-shadow: 'rgba(255, 78, 78, 0.3)'
+
+#     --highlight-nav: '#e6e6e6'
+#     --highlight-scrollbar: '#d6d6d6'
+#     --highlight-background: '#f7f7f7'
+#     --highlight-current-line: '#dadada'
+#     --highlight-selection: '#e9e9e9'
+#     --highlight-foreground: '#4d4d4d'
+#     --highlight-comment: '#7d7d7d'
+#     --highlight-red: '#c8362b'
+#     --highlight-orange: '#b66014'
+#     --highlight-yellow: '#cb911d'
+#     --highlight-green: '#2ea52e'
+#     --highlight-aqua: '#479d9d'
+#     --highlight-blue: '#1973b8'
+#     --highlight-purple: '#7135ac'
+#   dark:
+#     --red-4: 'rgba(255, 208, 208, 0.5)'
+#     --red-5: 'rgba(255,228,228,0.15)'
+#     --red-5-5: 'rgba(255,236,236,0.05)'
+#     --red-6: 'rgba(255, 243, 243, 0.2)'
+
+#     --highlight-nav: '#2e353f'
+#     --highlight-scrollbar: '#454d59'
+#     --highlight-background: '#22272e'
+#     --highlight-current-line: '#393939'
+#     --highlight-selection: '#515151'
+#     --highlight-foreground: '#cccccc'
+#     --highlight-comment: '#999999'
+#     --highlight-red: '#f47067'
+#     --highlight-orange: '#f69d50'
+#     --highlight-yellow: '#ffcc66'
+#     --highlight-green: '#99cc99'
+#     --highlight-aqua: '#66cccc'
+#     --highlight-blue: '#54b6ff'
+#     --highlight-purple: '#dcbdfb'
+
+# Blue theme
 internal_theme:
   light:
-    --red-0: '#ff0000'
-    --red-1: '#ff5252'
-    --red-2: '#ff7c7c'
-    --red-3: '#ffafaf'
-    --red-4: '#ffd0d0'
-    --red-5: '#ffecec'
-    --red-5-5: '#fff3f3'
-    --red-6: '#fff7f7'
-    --color-red-6-shadow: 'rgba(255, 78, 78, 0.6)'
-    --color-red-3-shadow: 'rgba(255, 78, 78, 0.3)'
+    --red-0: '#265bd2'
+    --red-1: '#4e77da'
+    --red-2: '#6a8de0'
+    --red-3: '#8fa8e7'
+    --red-4: '#b7c8f0'
+    --red-5: '#e0e8fa'
+    --red-5-5: '#ebf0fc'
+    --red-6: '#f5f8fe'
+    --color-red-6-shadow: 'rgba(38, 91, 210, 0.6)'
+    --color-red-3-shadow: 'rgba(38, 91, 210, 0.3)'
 
     --highlight-nav: '#e6e6e6'
     --highlight-scrollbar: '#d6d6d6'
@@ -663,18 +713,19 @@ internal_theme:
     --highlight-selection: '#e9e9e9'
     --highlight-foreground: '#4d4d4d'
     --highlight-comment: '#7d7d7d'
-    --highlight-red: '#c8362b'
-    --highlight-orange: '#b66014'
-    --highlight-yellow: '#cb911d'
-    --highlight-green: '#2ea52e'
-    --highlight-aqua: '#479d9d'
+    --highlight-red: '#265bd2'
+    --highlight-orange: '#1f4db1'
+    --highlight-yellow: '#3b6fd9'
+    --highlight-green: '#2a52a5'
+    --highlight-aqua: '#3e77cc'
     --highlight-blue: '#1973b8'
-    --highlight-purple: '#7135ac'
+    --highlight-purple: '#153d80'
+
   dark:
-    --red-4: 'rgba(255, 208, 208, 0.5)'
-    --red-5: 'rgba(255,228,228,0.15)'
-    --red-5-5: 'rgba(255,236,236,0.05)'
-    --red-6: 'rgba(255, 243, 243, 0.2)'
+    --red-4: 'rgba(183, 200, 240, 0.5)'
+    --red-5: 'rgba(224, 232, 250, 0.15)'
+    --red-5-5: 'rgba(235, 240, 252, 0.05)'
+    --red-6: 'rgba(245, 248, 254, 0.2)'
 
     --highlight-nav: '#2e353f'
     --highlight-scrollbar: '#454d59'
@@ -683,10 +734,60 @@ internal_theme:
     --highlight-selection: '#515151'
     --highlight-foreground: '#cccccc'
     --highlight-comment: '#999999'
-    --highlight-red: '#f47067'
-    --highlight-orange: '#f69d50'
-    --highlight-yellow: '#ffcc66'
-    --highlight-green: '#99cc99'
-    --highlight-aqua: '#66cccc'
-    --highlight-blue: '#54b6ff'
-    --highlight-purple: '#dcbdfb'
+    --highlight-red: '#4e77da'
+    --highlight-orange: '#6a8de0'
+    --highlight-yellow: '#8fa8e7'
+    --highlight-green: '#99b7f0'
+    --highlight-aqua: '#66a3ff'
+    --highlight-blue: '#265bd2'
+    --highlight-purple: '#a0bdfb'
+
+# Purple theme
+# internal_theme:
+#   light:
+#     --red-0: '#bc88ff'
+#     --red-1: '#c79eff'
+#     --red-2: '#d0afff'
+#     --red-3: '#dabfff'
+#     --red-4: '#e5d2ff'
+#     --red-5: '#f0e5ff'
+#     --red-5-5: '#f7f0ff'
+#     --red-6: '#fbf8ff'
+#     --color-red-6-shadow: 'rgba(188, 136, 255, 0.6)'
+#     --color-red-3-shadow: 'rgba(188, 136, 255, 0.3)'
+
+#     --highlight-nav: '#e6e6e6'
+#     --highlight-scrollbar: '#d6d6d6'
+#     --highlight-background: '#f7f7f7'
+#     --highlight-current-line: '#dadada'
+#     --highlight-selection: '#e9e9e9'
+#     --highlight-foreground: '#4d4d4d'
+#     --highlight-comment: '#7d7d7d'
+#     --highlight-red: '#bc88ff'
+#     --highlight-orange: '#a874e6'
+#     --highlight-yellow: '#c69eff'
+#     --highlight-green: '#9f66e6'
+#     --highlight-aqua: '#b07cff'
+#     --highlight-blue: '#8a4ddb'
+#     --highlight-purple: '#7135ac'
+
+#   dark:
+#     --red-4: 'rgba(229, 210, 255, 0.5)'
+#     --red-5: 'rgba(240, 229, 255, 0.15)'
+#     --red-5-5: 'rgba(247, 240, 255, 0.05)'
+#     --red-6: 'rgba(251, 248, 255, 0.2)'
+
+#     --highlight-nav: '#2e353f'
+#     --highlight-scrollbar: '#454d59'
+#     --highlight-background: '#22272e'
+#     --highlight-current-line: '#393939'
+#     --highlight-selection: '#515151'
+#     --highlight-foreground: '#cccccc'
+#     --highlight-comment: '#999999'
+#     --highlight-red: '#c79eff'
+#     --highlight-orange: '#d0afff'
+#     --highlight-yellow: '#dabfff'
+#     --highlight-green: '#e5d2ff'
+#     --highlight-aqua: '#bc88ff'
+#     --highlight-blue: '#a874e6'
+#     --highlight-purple: '#dcbdfb'
